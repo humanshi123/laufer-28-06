@@ -1,0 +1,291 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.from-value label {
+  color: #1A1613;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+}
+.field {
+  background: var(--Neutrals-White, #FFF);
+  /* padding: 12px 0px 12px 0px; */
+  height: 42px;
+  margin-bottom: 20px;
+  color: #1A1613;
+  font-size: 16px;
+  
+  align-items: center;
+}
+
+.border-field {
+  border-radius: 6px;
+  border: 2px solid var(--Neutrals-400, #CBD2E0);
+  background: var(--Neutrals-White, #FFF);
+  /* padding: 12px 12px 12px 16px; */
+  margin-bottom: 20px;
+  color: #1A1613;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.cursor {
+  cursor: pointer;
+}
+button.button.margin-left {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+span.error {
+  color: red;
+  font-size: 14px;
+  position: relative;
+  top: -6px;
+  margin-bottom: 2px;
+}
+form.from-value-2 label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+form.from-value-2 .border-field {
+  margin-bottom: 8px;
+}
+.border-field::-webkit-input-placeholder { 
+  color: #1A1613;
+}
+.border-field::-moz-placeholder { 
+  color: #1A1613;
+}
+.border-field:-ms-input-placeholder { 
+  color: #1A1613;
+}
+.border-field:-moz-placeholder { 
+  color: #1A1613;
+}
+.from-value select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(./assets/arrow-down.svg);
+  background-position: 98%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.from-value input[type=text], .from-value textarea {
+  cursor: auto  ;
+}
+.from-value input[type=checkbox], .form-value-field input[type=checkbox]  {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 42px;
+  width: 42px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+
+.from-value input[type=checkbox]:checked, .form-value-field input[type=checkbox]:checked {
+  background: url(./assets/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 1;
+}
+
+button.button {
+  border-radius: 4px;
+  background: #F7CF47;
+  padding: 10px 24px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+button.button:disabled {
+  border-radius: 4px;
+  background: #CCCCCC;
+  padding: 10px 24px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+table.custom-table thead th {
+  font-weight: 400;
+}
+table.custom-table td, table.custom-table th {
+  padding: 10px;
+}
+table.custom-table tbody td {
+  border: 1px solid #cbd5e1;
+  text-align: center;
+}
+.border-right-sec {
+  border-right: 3px solid #898787;
+}
+.breadcrumb-item.active {
+  color: #007bff; 
+}
+
+.breadcrumb-item:not(.active) {
+  color: #6c757d; 
+}
+
+
+/* index.css */
+
+/* General styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Form styles */
+.form-value {
+  margin-top: 100px;
+}
+
+.tooth-td {
+  width: 50px;
+  text-align: center;
+  flex:1;
+  /* width:  "100%"; */
+}
+
+.form-field {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  
+}
+
+.text-sm {
+  height: 0.875rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .breadcrum-section {
+    padding-top: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+  form {
+    margin-bottom: 100px;
+  }
+
+  .tooth-td {
+    width: 30px
+  }
+}
+
+/* Fields */
+.border-field {
+  border: 1px solid #CBD2E0;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Errors */
+.text-red-500 {
+  color: #f56565;
+}
+
+.PDFRow {
+  width: 100%
+}
+
+.py-2 {
+  /* padding-top: 0.2rem; */
+  /* padding-bottom: 0.2rem; */
+  line-height: 20px;
+}
+
+.divivder-row {
+  border-bottom: 1px rgb(30, 30, 30) solid;
+}
+
+.final-row {
+  border-bottom: 2px rgb(30, 30, 30) double;
+}
+
+.pt-28 {
+  padding-top: 6rem;
+}
+
+.yellow-square {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+.content-form .from-value input[type=checkbox] {
+  border: 2px solid #2b2a2a;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+table.newpdf-table {
+  border: 1px solid #000;
+}
+table.newpdf-table td, table.newpdf-table th {
+  height: 50px;
+  border-right: 1px solid;
+}

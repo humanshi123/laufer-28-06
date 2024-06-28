@@ -1,0 +1,3 @@
+enabled: true
+command: node
+args: [ "hello_world.js" ]

@@ -1,0 +1,5 @@
+enabled: true
+command: node
+args: [ "hello_world.js" ]
+env:
+  NODE_ENV: production
